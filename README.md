@@ -123,3 +123,7 @@ The Brazilian E-Commerce Public Dataset by Olist contains approximately 100,000 
 
 [1]: https://github.com/ayushic2899/Brazilian-E-Commerce-Public-Dataset-by-Olist "Brazilian E-Commerce Public Dataset by Olist project documentation"
 [2]: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce "Brazilian E-Commerce Public Dataset by Olist"
+
+## Engineering quality
+
+This project includes a reusable data-quality profiler, duplicate and missing-value checks, tested delivery-rate logic, and a GitHub Actions workflow that compiles the code and runs the tests. The SQL file also includes rolling three-month SLA monitoring with window functions.

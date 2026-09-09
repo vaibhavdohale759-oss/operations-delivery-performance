@@ -1,4 +1,5 @@
 from pathlib import Path
+from quality_checks import write_quality_report
 import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -41,6 +42,7 @@ base["on_time"] = (base["delay_days"] <= 0).astype("Int64")
 base["freight_share_pct"] = base["freight_value"] / base["payment_value"].replace(0, pd.NA) * 100
 base["purchase_month"] = base["order_purchase_timestamp"].dt.to_period("M").astype(str)
 base.to_csv(REPORTS / "cleaned_order_operations.csv", index=False)
+write_quality_report(base, REPORTS / "data_quality_report.csv", key_column="order_id")
 
 # Operational scope: delivered orders have observed delivery and delay metrics.
 delivered = base[base["order_status"] == "delivered"].copy()
