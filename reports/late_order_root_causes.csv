@@ -1,0 +1,15 @@
+customer_state,order_status,orders,avg_delay_days,avg_order_value
+CE,delivered,196,14.33,203.87
+RJ,delivered,1664,12.85,167.7
+PA,delivered,117,12.3,214.66
+PE,delivered,172,11.34,203.53
+BA,delivered,457,11.1,186.03
+ES,delivered,244,10.6,179.82
+MA,delivered,141,9.97,223.49
+GO,delivered,160,9.79,164.83
+RS,delivered,382,9.41,164.1
+SC,delivered,346,7.7,151.88
+MG,delivered,637,7.53,168.21
+PR,delivered,246,7.4,172.36
+SP,delivered,2387,7.03,161.28
+DF,delivered,147,6.64,139.29

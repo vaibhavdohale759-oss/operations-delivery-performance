@@ -1,0 +1,2 @@
+orders_analyzed,delivered_orders,cancelled_orders,cancellation_rate_pct,on_time_delivery_rate_pct,late_deliveries,avg_delivery_days,avg_delay_days_late_orders,avg_freight_share_pct,total_payment_value
+99441,96478,625,0.63,91.88,7834,12.56,9.55,20.89,16008872.12
