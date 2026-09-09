@@ -67,7 +67,7 @@ Freight represents an average of **20.89%** of payment value among delivered ord
 
 ## Methodology and limitations
 
-The analysis joins order, customer, order-item, payment, and seller-related operational data at the order level. Delivery metrics are calculated only for orders with `order_status = delivered` and valid purchase, delivered-customer, and estimated-delivery timestamps. An order is considered on time when the customer delivery timestamp is on or before the estimated delivery timestamp.
+The analysis joins order, customer, order-item, and payment data at the order level. Delivery metrics are calculated only for orders with `order_status = delivered` and valid purchase, delivered-customer, and estimated-delivery timestamps. An order is considered on time when the customer delivery timestamp is on or before the estimated delivery timestamp.
 
 The dataset represents an anonymized historical marketplace sample from Brazil. It does not include a complete carrier identifier or a direct customer-service ticket table, so regional patterns cannot by themselves establish the cause of delay. Low-volume state comparisons are filtered in the SQL output, and the dashboard specification recommends minimum-volume thresholds.
 
